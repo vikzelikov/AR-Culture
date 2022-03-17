@@ -13,7 +13,7 @@ struct MapView : View {
     
     @StateObject private var viewModel = MapViewModel()
     
-    @State private var isDetailModal = false
+    @State private var isShowDetail = false
     @State private var isShowDirection = false
 
     var annotationItems: [MyAnnotationItem] = [
@@ -24,7 +24,10 @@ struct MapView : View {
     var body: some View {
         ZStack {
             LazyView {
-                MapDirectionsView(from: viewModel.region.center, to: annotationItems.first!.coordinate)
+                MapDirectionsView(
+                    from: viewModel.userCoordinate ?? viewModel.region.center,
+                    to: annotationItems.first!.coordinate
+                )
             }.hiddenNavigationBarStyle()
                 .navigatePush(when: $isShowDirection)
             
@@ -35,7 +38,7 @@ struct MapView : View {
             ) { item in
                 MapAnnotation(coordinate: item.coordinate) {
                     Button {
-                        self.isShowDirection.toggle()
+                        self.isShowDetail.toggle()
                     } label: {
                         VStack{
 
@@ -48,12 +51,12 @@ struct MapView : View {
                     }
                 }
             }.ignoresSafeArea()
-                .accentColor(Color(.systemPink))
+                .accentColor(Color(.systemBlue))
                 .onAppear {
                     viewModel.checkIfLocationServicesIsEnabled()
                 }
-                .sheet(isPresented: $isDetailModal) {
-                    DetailModelView()
+                .sheet(isPresented: $isShowDetail) {
+                    DetailModelView(isDirection: $isShowDirection)
                 }
         }
     }
@@ -73,6 +76,8 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         center: CLLocationCoordinate2D(latitude: 59.903389, longitude: 30.487659),
         span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     )
+    
+    @Published var userCoordinate: CLLocationCoordinate2D?
     
     var locationManager: CLLocationManager?
     
@@ -96,10 +101,18 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         case .denied:
             print("denied")
         case .authorizedAlways, .authorizedWhenInUse:
-            region = MKCoordinateRegion(
-                center: locationManager.location!.coordinate,
-                span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-            )
+            if let coordinate = locationManager.location?.coordinate {
+                region = MKCoordinateRegion(
+                    center: coordinate,
+                    span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+                )
+                
+                // save user location
+                if userCoordinate == nil {
+                    userCoordinate = coordinate
+                }
+            }
+            
         @unknown default:
             break
         }

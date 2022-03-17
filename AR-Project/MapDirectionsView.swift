@@ -46,6 +46,7 @@ struct MapViewRepresentable: UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
         mapView.delegate = context.coordinator
+        mapView.showsUserLocation = true
 
         let region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: from.latitude, longitude: from.longitude),
@@ -56,6 +57,10 @@ struct MapViewRepresentable: UIViewRepresentable {
         let p1 = MKPlacemark(coordinate: from)
         let p2 = MKPlacemark(coordinate: to)
 
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = to
+        annotation.title = "Destination"
+        
         let request = MKDirections.Request()
         request.source = MKMapItem(placemark: p1)
         request.destination = MKMapItem(placemark: p2)
@@ -65,7 +70,7 @@ struct MapViewRepresentable: UIViewRepresentable {
            
         directions.calculate { response, error in
             guard let route = response?.routes.first else { return }
-            mapView.addAnnotations([p2])
+            mapView.addAnnotation(annotation)
             mapView.addOverlay(route.polyline)
             mapView.setVisibleMapRect(
                 route.polyline.boundingMapRect,

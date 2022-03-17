@@ -6,19 +6,22 @@
 //
 
 import SwiftUI
+import SceneKit
 
 struct DetailModelView: View {
+    
+    @Binding var isDirection: Bool
     
     @Environment(\.presentationMode) private var presentationMode
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing: 10) {
-                Image("test")
-                    .resizable()
-                    .scaledToFill()
-                    .cornerRadius(16)
-
+                SceneView(
+                    scene: SCNScene(named: "toy_biplane.usdz"),
+                    options: [.autoenablesDefaultLighting, .allowsCameraControl]
+                ).frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 2)
+                
                 Text("Some title")
                     .font(.title)
                 
@@ -28,6 +31,7 @@ struct DetailModelView: View {
                 
                 Button {
                     presentationMode.wrappedValue.dismiss()
+                    isDirection = true
                 } label: {
                     HStack {
                         Text("Direct")
@@ -38,9 +42,8 @@ struct DetailModelView: View {
                         .background(Color.purple)
                         .cornerRadius(16)
                 }
-
             }.padding(10)
-        }
+        }.padding(.horizontal, 16)
     }
     
 }
@@ -48,7 +51,7 @@ struct DetailModelView: View {
 struct DetailModelView_Previews: PreviewProvider {
     
     static var previews: some View {
-        DetailModelView()
+        DetailModelView(isDirection: .constant(false))
     }
     
 }

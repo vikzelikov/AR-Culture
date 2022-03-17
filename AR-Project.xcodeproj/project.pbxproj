@@ -119,8 +119,8 @@
 		18CE882927AFF3E400F3F409 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18CE883B27B03A6700F3F409 /* house_01.usdz */,
 				18CE882B27AFF3FB00F3F409 /* toy_biplane.usdz */,
+				18CE883B27B03A6700F3F409 /* house_01.usdz */,
 				18CE882A27AFF3FA00F3F409 /* toy_robot_vintage.usdz */,
 			);
 			path = Models;
