@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Map-Marker-PNG-File.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

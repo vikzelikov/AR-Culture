@@ -7,20 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186CD9D727E3B9DE0014A545 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CD9D627E3B9DE0014A545 /* UIImage.swift */; };
+		186CD9D927E3C0E70014A545 /* MapDirectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CD9D827E3C0E70014A545 /* MapDirectionsView.swift */; };
+		186CD9DC27E3C52E0014A545 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CD9DB27E3C52E0014A545 /* Coordinate.swift */; };
+		186CD9DE27E3D1840014A545 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186CD9DD27E3D1840014A545 /* Launch.storyboard */; };
+		188CB08E27BF094500CE7B15 /* DetailModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188CB08D27BF094500CE7B15 /* DetailModelView.swift */; };
 		18CE881A27AFF29700F3F409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE881927AFF29700F3F409 /* AppDelegate.swift */; };
 		18CE881C27AFF29700F3F409 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE881B27AFF29700F3F409 /* ContentView.swift */; };
 		18CE881E27AFF29700F3F409 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 18CE881D27AFF29700F3F409 /* Experience.rcproject */; };
 		18CE882027AFF29A00F3F409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CE881F27AFF29A00F3F409 /* Assets.xcassets */; };
 		18CE882327AFF29A00F3F409 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CE882227AFF29A00F3F409 /* Preview Assets.xcassets */; };
+		18CE882D27AFF3FC00F3F409 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18CE882A27AFF3FA00F3F409 /* toy_robot_vintage.usdz */; };
+		18CE882E27AFF3FC00F3F409 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18CE882B27AFF3FB00F3F409 /* toy_biplane.usdz */; };
+		18CE883127B0004D00F3F409 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE883027B0004D00F3F409 /* Model.swift */; };
+		18CE883427B0054E00F3F409 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 18CE883327B0054E00F3F409 /* FocusEntity */; };
+		18CE883C27B03A6700F3F409 /* house_01.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 18CE883B27B03A6700F3F409 /* house_01.usdz */; };
+		18CE883E27B041FD00F3F409 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE883D27B041FD00F3F409 /* MapView.swift */; };
+		18CE884027B0428C00F3F409 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE883F27B0428C00F3F409 /* TabBarView.swift */; };
+		18CE884327B042AF00F3F409 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE884227B042AF00F3F409 /* View.swift */; };
+		18CE884527B044EA00F3F409 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CE884427B044EA00F3F409 /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		186CD9D627E3B9DE0014A545 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		186CD9D827E3C0E70014A545 /* MapDirectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDirectionsView.swift; sourceTree = "<group>"; };
+		186CD9DB27E3C52E0014A545 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		186CD9DD27E3D1840014A545 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		188CB08D27BF094500CE7B15 /* DetailModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModelView.swift; sourceTree = "<group>"; };
 		18CE881627AFF29700F3F409 /* AR-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		18CE881927AFF29700F3F409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18CE881B27AFF29700F3F409 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18CE881D27AFF29700F3F409 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		18CE881F27AFF29A00F3F409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18CE882227AFF29A00F3F409 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18CE882A27AFF3FA00F3F409 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		18CE882B27AFF3FB00F3F409 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		18CE883027B0004D00F3F409 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		18CE883B27B03A6700F3F409 /* house_01.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = house_01.usdz; sourceTree = "<group>"; };
+		18CE883D27B041FD00F3F409 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		18CE883F27B0428C00F3F409 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		18CE884227B042AF00F3F409 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		18CE884427B044EA00F3F409 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,12 +55,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18CE883427B0054E00F3F409 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186CD9DA27E3C5140014A545 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				186CD9DB27E3C52E0014A545 /* Coordinate.swift */,
+			);
+			path = Entites;
+			sourceTree = "<group>";
+		};
 		18CE880D27AFF29700F3F409 = {
 			isa = PBXGroup;
 			children = (
@@ -53,11 +89,21 @@
 		18CE881827AFF29700F3F409 /* AR-Project */ = {
 			isa = PBXGroup;
 			children = (
+				186CD9DA27E3C5140014A545 /* Entites */,
+				18CE884127B042A100F3F409 /* Extensions */,
+				18CE882927AFF3E400F3F409 /* Models */,
 				18CE881927AFF29700F3F409 /* AppDelegate.swift */,
 				18CE881B27AFF29700F3F409 /* ContentView.swift */,
 				18CE881D27AFF29700F3F409 /* Experience.rcproject */,
 				18CE881F27AFF29A00F3F409 /* Assets.xcassets */,
 				18CE882127AFF29A00F3F409 /* Preview Content */,
+				18CE883027B0004D00F3F409 /* Model.swift */,
+				18CE883D27B041FD00F3F409 /* MapView.swift */,
+				18CE883F27B0428C00F3F409 /* TabBarView.swift */,
+				18CE884427B044EA00F3F409 /* InitialView.swift */,
+				188CB08D27BF094500CE7B15 /* DetailModelView.swift */,
+				186CD9D827E3C0E70014A545 /* MapDirectionsView.swift */,
+				186CD9DD27E3D1840014A545 /* Launch.storyboard */,
 			);
 			path = "AR-Project";
 			sourceTree = "<group>";
@@ -68,6 +114,25 @@
 				18CE882227AFF29A00F3F409 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18CE882927AFF3E400F3F409 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18CE883B27B03A6700F3F409 /* house_01.usdz */,
+				18CE882B27AFF3FB00F3F409 /* toy_biplane.usdz */,
+				18CE882A27AFF3FA00F3F409 /* toy_robot_vintage.usdz */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18CE884127B042A100F3F409 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				18CE884227B042AF00F3F409 /* View.swift */,
+				186CD9D627E3B9DE0014A545 /* UIImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +151,9 @@
 			dependencies = (
 			);
 			name = "AR-Project";
+			packageProductDependencies = (
+				18CE883327B0054E00F3F409 /* FocusEntity */,
+			);
 			productName = "AR-Project";
 			productReference = 18CE881627AFF29700F3F409 /* AR-Project.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 18CE880D27AFF29700F3F409;
+			packageReferences = (
+				18CE883227B0054E00F3F409 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 18CE881727AFF29700F3F409 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,6 +201,10 @@
 			files = (
 				18CE882327AFF29A00F3F409 /* Preview Assets.xcassets in Resources */,
 				18CE882027AFF29A00F3F409 /* Assets.xcassets in Resources */,
+				18CE883C27B03A6700F3F409 /* house_01.usdz in Resources */,
+				18CE882E27AFF3FC00F3F409 /* toy_biplane.usdz in Resources */,
+				18CE882D27AFF3FC00F3F409 /* toy_robot_vintage.usdz in Resources */,
+				186CD9DE27E3D1840014A545 /* Launch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +216,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				18CE881C27AFF29700F3F409 /* ContentView.swift in Sources */,
+				186CD9D727E3B9DE0014A545 /* UIImage.swift in Sources */,
+				18CE884527B044EA00F3F409 /* InitialView.swift in Sources */,
 				18CE881A27AFF29700F3F409 /* AppDelegate.swift in Sources */,
 				18CE881E27AFF29700F3F409 /* Experience.rcproject in Sources */,
+				18CE883E27B041FD00F3F409 /* MapView.swift in Sources */,
+				186CD9D927E3C0E70014A545 /* MapDirectionsView.swift in Sources */,
+				188CB08E27BF094500CE7B15 /* DetailModelView.swift in Sources */,
+				18CE884027B0428C00F3F409 /* TabBarView.swift in Sources */,
+				18CE884327B042AF00F3F409 /* View.swift in Sources */,
+				18CE883127B0004D00F3F409 /* Model.swift in Sources */,
+				186CD9DC27E3C52E0014A545 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +361,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on map";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -308,8 +394,10 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show it on map";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Launch;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -349,6 +437,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		18CE883227B0054E00F3F409 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		18CE883327B0054E00F3F409 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 18CE883227B0054E00F3F409 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18CE880E27AFF29700F3F409 /* Project object */;
 }
